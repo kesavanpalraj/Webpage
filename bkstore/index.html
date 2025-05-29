@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="#" class="imglogo">
+                <img src="book images/logo.jpg" alt="Logo" class="logo-img">
+            </a>
+            <span class="logo-text">Book Store</span>
+        </div>
+        <ul class="sig_up">
+            <a href="signup.php">Sign Up</a>
+            <a href="login.php">Login</a>
+        </ul>
+    </nav>
+    <main>
+        <section class="banner">
+            <div class="banner-content">
+                <h1>Up to 75% Off</h1>
+                <p>The research paper on online bookstores aims to examine the current state of online bookstores and their significant impact on the publishing industry. The study begins with a comprehensive overview of the evolution of book selling, from traditional brick-and-mortar stores to modern online platforms.</p>
+            </div>
+            <div class="banner-books">
+                <img src="book images/index (5).jpeg" alt="Book 1">
+            </div>
+        </section>
+
+        <h1 class="book-list-heading">Popular Collections</h1>
+        <div class="book-list">
+            <div class="book" data-title="Amazing Places of India">
+                <img src="book images/index (1).jpeg" width="165px" height="200px">
+                <div class="book-info">
+                    <h3>Amazing Places<br>of India</h3>
+                    <button onclick="showErrorMessage('Please sign in to read this book.')" class="read_btn">Read this book</button>
+                    <form>
+                        <input type="hidden" name="book_id" value="1">
+                        <input type="hidden" name="book_title" value="Amazing Places of India">
+                    </form>
+                </div>
+            </div>
+
+            <div class="book" data-title="Mahabharatha">
+                <img src="book images/index (2).jpeg" width="165px" height="200px">
+                <div class="book-info">
+                    <h3>Mahabharatha</h3><br>
+                    <button onclick="showErrorMessage('Please sign in to read this book.')" class="read_btn">Read this book</button>
+                    <form>
+                        <input type="hidden" name="book_id" value="2">
+                        <input type="hidden" name="book_title" value="Mahabharatha">   
+                    </form>
+                </div>
+            </div>
+
+            <div class="book" data-title="Ramayana - The Story of Lord Rama">
+                <img src="book images/index (3).jpeg" width="165px" height="200px">
+                <div class="book-info">
+                    <h3>Ramayana - The Story of Lord Rama</h3>
+                    <button onclick="showErrorMessage('Please sign in to read this book.')" class="read_btn">Read this book</button>
+                    <form>
+                        <input type="hidden" name="book_id" value="3">
+                        <input type="hidden" name="book_title" value="Ramayana - The Story of Lord Rama">           
+                    </form>
+                </div>
+            </div>
+
+            <div class="book" data-title="Bhagavad Gita">
+                <img src="book images/index (4).jpeg" width="165px" height="200px">
+                <div class="book-info">
+                    <h3>Bhagavad Gita</h3><br>
+                    <button onclick="showErrorMessage('Please sign in to read this book.')" class="read_btn">Read this book</button>
+                    <form>
+                        <input type="hidden" name="book_id" value="4">
+                        <input type="hidden" name="book_title" value="Bhagavad Gita">           
+                    </form>
+                </div>
+            </div>
+        </div>        
+        <div class="error-message" id="error-message"></div><br><br><br>
+    </main>
+
+    <section class="footer">
+        <div class="footer-container">
+            <div class="tag">
+                <h2>Our Online Bookstore</h2>     
+                <p>The more that you read, the more things you will know.<br>The more that you learn, the more places you’ll go.</p>
+            </div>
+            
+            <div class="tag">
+                <h1>Quick Links</h1>
+                <a href="#">Home</a>
+                <a href="#">Cart</a>
+                <a href="#">About</a>
+            </div>
+
+            <div class="tag">
+                <h1>Community</h1>
+                <ul>
+                    <li><a href="#">Book Reviews</a></li>
+                    <li><a href="#">Reading Forums</a></li>
+                    <li><a href="#">Book Clubs</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Events & Meetups</a></li>
+                </ul>
+            </div>
+                        
+            <div class="tag">
+                <h1>Contact Us</h1>
+                <ul>
+                    <li>Email: info@yourbookstore.com</li>
+                    <li>Phone: +123-456-7890</li>
+                    <li>Address: 123 Bookstore Street, City, Country</li>
+                    <li>Working Hours: Mon-Fri, 9 AM - 6 PM</li>
+                </ul>
+            </div>
+            
+            <div class="tag">
+                <h1>Follow Us</h1>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">WhatsApp</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Copyright should be outside the flex container -->
+        <div class="copyright">
+            <p>&copy; 2025 Your Bookstore. All rights reserved.</p>
+        </div>
+    </section>
+           
+<script>
+    function showErrorMessage(message) {
+        alert(message);
+    }
+</script>
+</body>
+</html>
